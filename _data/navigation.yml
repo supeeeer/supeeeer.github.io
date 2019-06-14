@@ -1,9 +1,9 @@
 # Site navigation links
 
 - title: Articles
-  url: /test/
-  image: gazette.png
+  url: /Article/
+  image: Articles.png
 
 - title: About Me
-  url: /test/
-  image: famous.png
+  url: /Profile/profile
+  image: AboutMe.png
