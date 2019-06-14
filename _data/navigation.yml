@@ -2,10 +2,8 @@
 
 - title: Articles
   url: /test/
-  excerpt:
   image: gazette.png
 
-  - title: About Me
+- title: About Me
   url: /test/
-  excerpt:
   image: famous.png
