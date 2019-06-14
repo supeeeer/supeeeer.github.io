@@ -3,7 +3,7 @@
 title: "Supeeeer ☀️"
 description: "my blog lalala "
 logo: profile.jpg # 120x120 px default image used for Twitter summary card
-teaser: diversify.png # 400x250 px default teaser image used in image archive grid
+teaser: default.png # 400x250 px default teaser image used in image archive grid
 locale: en
 url: https://supeeeer.github.io/
 feed:
