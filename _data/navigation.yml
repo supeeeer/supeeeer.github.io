@@ -1,11 +1,11 @@
 # Site navigation links
 
 - title: Articles
-  url: https://supeeeer.github.io/
+  url: /test/
   excerpt:
   image: gazette.png
 
   - title: About Me
-  url: https://supeeeer.github.io/
+  url: /test/
   excerpt:
   image: famous.png
