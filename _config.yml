@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: "My Site"
-description: "This is a description of my awesome site."
-logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
+title: "Supeeeer ☀️"
+description: "my blog lalala "
+logo: profile.jpg # 120x120 px default image used for Twitter summary card
+teaser: diversify.png # 400x250 px default teaser image used in image archive grid
 locale: en
 url: https://supeeeer.github.io/
 feed:
@@ -35,6 +35,7 @@ owner:
   bio:
   avatar: bio-photo.jpg # 160x160 px image for author byline
   disqus-shortname:
+  
 
 
 include:
