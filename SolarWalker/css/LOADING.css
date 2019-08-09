@@ -1,0 +1,51 @@
+.box{
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0; 
+	line-height: 5rem;
+	font-size: 5rem;
+	letter-spacing: 1rem;
+}
+
+.out{
+	border-radius: 50%;
+	display: flex;
+	flex: 0 0 5rem;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2rem;
+	background-color: #fff;
+}
+
+.inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 90%;
+	height: 90%;
+	background-color: #000;
+	animation: inner 500ms infinite alternate ease-in-out ;
+}
+
+@keyframes inner{
+	to{
+		width: 50%;
+		height: 50%;
+	}
+}
+
+.core{
+	border-radius: 50%;
+	width: 80%;
+	height: 80%;
+	background-color: #fff;
+	animation: core 1000ms infinite alternate ease-in-out ;
+}
+
+@keyframes core{
+	to{
+		width: 30%;
+		height: 30%;
+	}
+}

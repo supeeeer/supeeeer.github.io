@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<script src="js/jquery.js"></script>
+		<title>lunarmatch</title>
+		<link type="text/css" href="css/jspuzzle.css" rel="stylesheet" />
+   		<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+   	    <script type="text/javascript" src="js/jquery.jspuzzle-beta.js"></script>
+    		<script type="text/javascript">
+        $(function () {
+            $("#imageContainer").jspuzzle({ columns: 3, rows: 3, emptyColor: "orange" });
+        });
+    </script>
+	</head>
+	<body class="bg-index">
+		<div class="container">
+			<header  id="topNav"></header>
+		</div>
+		<div class="puzzle">
+			<div style="position: absolute;top: 150px; left: 160px;" onclick="javascript:location.href='allmission2.html' ">
+       		<img id="truckOriginal" alt="photo" src="img/moon2.jpg" />
+    		</div>
+        <span style="position:absolute;left: 150px;top: 120px;">Original : ( click to back to mission )</span>
+    
+        <div style="position: absolute; top: 150px; left: 700px;">
+        <div id="imageContainer">
+            <img id="truck" alt="photo" src="img/moon2.jpg" />
+        </div></div>
+    		<span style="position:absolute;left: 700px;top: 120px;">Puzzle :  ( click to move a block ) </span>
+		</div>
+		
+		<script src="js/topNav.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
+

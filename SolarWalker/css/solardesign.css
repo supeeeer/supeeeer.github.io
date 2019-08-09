@@ -1,0 +1,156 @@
+select{
+    background-color: black;
+    color: white;
+}
+
+select:focus{
+	
+}
+
+.kuang2{
+	background-color: black;
+    color: white;
+	}
+	
+.bg-explore{
+	background-image: url(../img/bg-explore.png);
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+	min-height: 100vh;
+}
+
+.alt{
+	width: 100%
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container-explore{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+
+}
+
+/* 顶部菜单选中 */
+#explore{
+	color: #fe8532;
+	opacity: 1;
+	font-weight: bolder;
+}
+
+#exploreleft{
+	margin-left: 6rem;
+}
+
+.solarimg{
+	
+	max-height: 100%;
+  	max-width: 100%;
+}
+
+.word{
+	max-height: 100%;
+  	max-width: 100%;
+}
+
+
+
+.btn-start{
+	width: 9.5rem;
+	line-height: 2.5rem;
+	color: #FFF;
+	font-size: 1.2rem;
+	background-color:#fe8532;
+}
+
+.thewhole{
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 100px;
+	left: -20px;
+}
+.leftpart{
+	width: 40%;
+	height: 500px;
+	border:1px solid none;
+	float: left;
+	box-sizing: border-box;
+}
+.rightpart{
+	width: 60%;
+	height: 500px;
+	border:1px solid none;
+	float: left;
+	box-sizing: border-box;
+    top: -40px;
+}
+.leftpart img{
+	width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+
+
+.rightpart img{
+	width:auto;
+ height:auto;
+ max-width:90%;
+ max-height:90%;
+}
+.rightpart li{
+text-decoration: none;
+	list-style: none;
+	line-height: 4rem;
+}
+
+.rightpart{
+	position: relative;
+}
+
+.rightpart ul{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+button{
+	background-color:white;
+	color:#fe8532;
+	width:100px;
+	height: 40px;
+	autosize:false;	
+	border-radius:5px;
+	width: 180px
+	
+}
+.kuang0{
+	margin-top: -75px;
+}
+.kuang1{
+	margin-left: -22px;
+	border: none;
+	outline: none;
+}
+.kuang2{
+	margin-left: 50px;
+	border: none;
+	outline: none;
+	
+}
+.kuang3{
+    margin-left: 65px;
+	border: none;
+	outline: none;
+}
+a{
+	display:inline-block;
+}
+
+.aftermouse:hover{
+	background-image:url(../img/button3.png);
+	

@@ -1,0 +1,101 @@
+.bg-explore{
+	background-image: url(../img/bg-explore.png);
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+	min-height: 100vh;
+}
+
+.alt{
+	width: 100%
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container-explore{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+
+}
+
+/* 顶部菜单选中 */
+#explore{
+	color: #fe8532;
+	opacity: 1;
+	font-weight: bolder;
+}
+
+#exploreleft{
+	margin-left: 6rem;
+}
+
+.solarimg{
+	
+	max-height: 100%;
+  	max-width: 100%;
+}
+
+.word{
+	max-height: 100%;
+  	max-width: 100%;
+}
+
+
+
+.btn-start{
+	width: 9.5rem;
+	line-height: 2.5rem;
+	color: #FFF;
+	font-size: 1.2rem;
+	background-color:#fe8532;
+}
+
+.thewhole{
+	width: 100%;
+	height: 0;
+}
+.zuopart,.rightpart{
+	width: 50%;
+	height: 600px;
+	border:1px solid black;
+	float: left;
+	box-sizing: border-box;
+}
+
+.zuopart img{
+	width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+
+.zuopart input{
+	background-color:#fe8532;
+}
+
+.rightpart img{
+	width:auto;
+ height:auto;
+ max-width:90%;
+ max-height:90%;
+}
+a{
+	display:inline-block;
+	opacity: .5;
+}
+
+.aftermouse:hover {
+	opacity: 1;
+}
+
+.a1{
+	margin-left: 145px;
+    margin-top: 20px;
+}
+
+.a2{
+	margin-left: 115px;
+    margin-top: 48px;
+}

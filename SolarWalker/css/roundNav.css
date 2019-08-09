@@ -1,0 +1,51 @@
+.toggle{
+	position: fixed;
+	top: 50vh;
+	right: 3.5rem;
+}
+
+.toggle-on{
+	transform: rotate(-180deg);
+	transform-origin: 60px;
+}
+
+.round{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fe8532;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	transition: .5s;
+}
+
+.round:hover{
+	box-shadow: 0 0 20px #fe8532;
+}
+
+
+
+.roundsm{
+	position: absolute;
+	transform: scale(.7);
+}
+
+.section:nth-child(1) {
+	position: absolute;
+	left: -20px;
+	top: -80px;
+	
+}
+
+.section:nth-child(2) {
+	position: absolute;
+	left: -80px;
+	top: 0;
+}
+
+.section:nth-child(3) {
+	position: absolute;
+	left: -20px;
+	top: 80px;
+}
+

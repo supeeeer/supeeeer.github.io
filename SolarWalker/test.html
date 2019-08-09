@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>九宫格完整版</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 600px;
+			height: 600px;
+			border: 1px solid #FFC0CB;
+			list-style: none;
+			margin: 10px auto;
+			position: relative;
+		}
+		#box li{
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			line-height: 200px;
+			font-size: 50px;
+			background: pink;
+			position: absolute;
+		}
+		#box .active{
+			z-index: 1;
+			color: #ac0;
+			background: yellow;
+		}
+	</style>
+	</head>
+	<body>
+		<ul id="box">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</body>
+</html>
+<script type="text/javascript">
+	 
+	 var oBox=document.getElementById('box');
+	 var aLi=oBox.children;
+	 
+	 for(var i=0;i<aLi.length;i++){
+	 	  
+	 	//布局
+	 	aLi[i].style.left=(i%3)*200+'px';
+	 	aLi[i].style.top=Math.floor(i/3)*200+'px';
+	 	
+	 	//记录顺序
+	 	aLi[i].index=i;
+	 	
+	 	//拖拽
+	 	aLi[i].onmousedown=function(ev){
+	 		var e=ev || window.event;
+	 		var iX=e.clientX-this.offsetLeft;
+	 		var iY=e.clientY-this.offsetTop;
+	 		
+	 		//针对低版本ie,建立透明层
+	 		if(this.setCapture){
+	 			this.setCapture();
+	 		}
+	 		
+	 		//添加样式
+	 		this.className='active';
+	 		var that=this;
+	 		
+	 		document.onmousemove=function(ev){
+	 			var e=ev || window.event;
+	 			
+	 			var iL=e.clientX-iX;
+	 			var iT=e.clientY-iY;
+	 			
+	 			that.style.left=iL+'px';
+	 			that.style.top=iT+'px';
+	 			
+	 			
+		 		
+	 		};
+	 		document.onmouseup=function(){
+	 			document.onmousemove=null;
+	 			document.onmouseup=null;
+	 			
+	 			//针对低版本ie,建立透明层
+		 		if(this.releaseCapture){
+		 			this.releaseCapture();
+		 		}
+		 		//判断是否交换位置
+		 		for(var j=0;j<aLi.length;j++){
+		 			if(
+		 				  aLi[j]!=that//排除自己
+		 				  && that.offsetLeft+that.offsetWidth>aLi[j].offsetLeft+aLi[j].offsetWidth/2
+		 				  && that.offsetTop+that.offsetHeight>aLi[j].offsetTop+aLi[j].offsetHeight/2
+		 				  && that.offsetLeft<aLi[j].offsetLeft+aLi[j].offsetWidth/2
+		 				  && that.offsetTop<aLi[j].offsetTop+aLi[j].offsetHeight/2
+		 			){
+		 				//交换顺序
+		 				var temp=aLi[j].index;
+		 				aLi[j].index=that.index;
+		 				that.index=temp;
+		 				
+		 				//交换位置
+		 				aLi[j].style.left=(aLi[j].index%3)*200+'px';
+		 				aLi[j].style.top=Math.floor(aLi[j].index/3)*200+'px';
+		 				break;
+		 				
+		 			}
+		 		}
+		 		
+		 		//去掉样式
+		 		that.className='';
+		 	    
+		 	    //还原位置
+		 	    that.style.left=(that.index % 3)*200+'px';
+		 	    that.style.top=Math.floor(that.index / 3)*200+'px';
+		 		
+	 		};
+	 		//阻止浏览器的默认行为
+	 		return false;
+	 	}
+	 }
+</script>

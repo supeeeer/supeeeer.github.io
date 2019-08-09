@@ -1,0 +1,74 @@
+.bg-study{
+	background-image: url(../img/bg-explore.png);
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+	min-height: 100vh;
+}
+
+.container-study{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+.video-study{
+	min-width: 800px;
+	max-height: 480px;
+	padding: 1rem;
+	text-align: center;
+	display: none;
+	transition: .5s;
+	/*animation: view 500ms;*/
+}
+
+/*@keyframes view{
+	from{max-height: 0;}
+	to{max-height: inherit;}
+}*/
+
+video{
+	max-height: inherit;
+}
+
+/* 顶部菜单选中 */
+#explore{
+	color: #fe8532;
+	opacity: 1;
+	font-weight: bolder;
+}
+
+/* 右下角标题 */
+
+#caption::before{
+	content: "日食的形成";
+	display: inline;
+}
+
+/* 左下角选中 */
+
+#nav-study-1 {
+	color: #fe8532;
+	font-weight:bolder ;
+}
+
+#nav-study-1  a{
+	opacity: 1;
+	color: #fe8532;
+	font-weight:800 ;
+}
+
+#nav-study-1  ::after{
+	content: "";
+	display: block;
+	width: 1px;
+	height:2rem;
+	margin: 0 auto;
+	background-color: #fe8532;
+}
+
+
+
+

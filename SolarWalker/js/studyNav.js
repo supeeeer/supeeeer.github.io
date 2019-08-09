@@ -1,0 +1,2 @@
+
+$("#studyNav").load("studyNav.html");

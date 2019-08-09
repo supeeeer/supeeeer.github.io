@@ -1,0 +1,39 @@
+.star{
+	display: inline-block;
+	direction: rtl;
+	/*font-size: 0;*/
+}
+
+span{
+	display: inline-block;
+	padding: .5rem;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+span:before{
+	content: "☆";
+	color: #fff;
+}
+
+span:hover{
+	cursor: pointer;
+}
+
+.star span:hover:before,
+.star span:hover ~span:before {
+	content: "★";
+	color:  #fe8532;
+}
+
+span:focus{
+	outline: none;
+}
+
+span:focus:before,
+span:focus ~span:before{
+	content: "★";
+	color: #fe8532;
+}
+
+
